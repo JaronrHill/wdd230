@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WDD 230 Assignment Portal | Jaron Hill | BYU-Idaho</title>
+    <meta name="description" content="The BYU Idaho WDD 230 assignment portal belonging to Jaron Hill">
+    <link rel="stylesheet" href="/assignment_portal/styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Slab:400,700" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="/assignment_portal/images/me.png" alt="Jaron Hill">
+        <h1>Jaron Hill</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">Site Plan</a></li>
+                <li><a href="#">Form</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>WDD 230: Web Frontend Development</h2>
+        <section class="card">
+            <section class="card learning-activities">
+                <h3>Learning Activities</h3>
+                <!-- List of learning activities -->
+            </section>
+            <ul>
+                <li>Week 01: <a href="#">W01 Activity: Course Home Page Development</a></li>
+                <li>Week 02: <a href="#">W02 Project Milestone: The Chamber Home Page</a></li>
+                <li>Week 03: <a href="#">W03 Project Milestone: The Chamber Discover Page</a></li>
+                <li>Week 04: <a href="#">W04 Project Milestone: The Chamber Join Page</a></li>
+                <li>Week 05: <a href="#">W05 Project Milestone: The Chamber Directory Page</a></li>
+                <li>Week 06: <a href="#">W06 Chamber Project: Home Page Enhancements</a></li>
+                <li>Week 07: <a href="#">W07 Chamber Website Project Final</a></li>
+            </ul>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> | Jaron Ray Hill | Rexburg, Idaho</p>
+        <p id="lastUpdated">Last Modification: </p>
+        <div class="footer-flag"></div>
+    </footer>
+    <script>
+        document.getElementById("currentYear").textContent = new Date().getFullYear();
+        document.getElementById("lastUpdated").textContent += document.lastModified;
+    </script>
+</body>
+
+</html>

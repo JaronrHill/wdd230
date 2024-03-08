@@ -125,11 +125,6 @@ footer {
     max-width: none;
 }
 
-.byui h2{
-    text-align: center;
-    color:#8d98c8
-}
-
 @media (max-width: 840px) {
 
     body,

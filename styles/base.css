@@ -147,10 +147,26 @@ footer {
         right: 10px;
         top: 10px;
     }
-    
+
     .menu-visible .hamburger {
         display: none;
     }
+}
+
+.close {
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    
+}
+
+.close.visible {
+    display: block;
 }
 
 .card {

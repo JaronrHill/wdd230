@@ -1,4 +1,3 @@
-// getDates.js
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById("currentYear").textContent = new Date().getFullYear();
     document.getElementById("lastUpdated").textContent += document.lastModified;
@@ -7,8 +6,6 @@ document.addEventListener('DOMContentLoaded', function() {
 document.querySelector('.dark-mode-toggle').addEventListener('click', function () {
     document.body.classList.toggle('dark-mode');
 });
-
-// hamburger //
 
 document.addEventListener('DOMContentLoaded', function () {
     const hamburger = document.querySelector('.hamburger');
@@ -50,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     function setInitialParticlePosition(particle) {
-        const size = Math.random() * 5 + 5; // Particle size between 5 and 10px
+        const size = Math.random() * 5 + 5;
         particle.style.cssText = `
             width: ${size}px;
             height: ${size}px;
@@ -58,10 +55,13 @@ document.addEventListener('DOMContentLoaded', function () {
             top: ${Math.random() * window.innerHeight}px;
             position: absolute;
             border-radius: 50%;
-            background-color: #8d98c8; /* Adjust color as needed */
+            background-color: #8d98c8; 
             opacity: 0.7;
         `;
         particle.dataset.speed = Math.random();
     }
 });
 
+const closeButton = document.querySelector('.close');
+closeButton.classList.add('visible');
+closeButton.classList.remove('visible');

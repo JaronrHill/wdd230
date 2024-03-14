@@ -32,7 +32,7 @@ header h1 {
 }
 
 nav ul {
-    background-color: #8d98c8;
+    background-color: #c2cdff;
     overflow: hidden;
     padding: 0;
     margin: 0;
@@ -50,7 +50,7 @@ li a {
 }
 
 a:hover {
-    color: white;
+    color: #7a0000;
 }
 
 nav ul li {
@@ -77,7 +77,7 @@ main h2 {
 }
 
 .card {
-    background-color: #8d98c8;
+    background-color: #c2cdff;
     border-radius: 10px;
     padding: 30px;
     margin: 10px 0;
@@ -101,13 +101,13 @@ footer {
 }
 
 .card {
-    background-color: #8d98c8;
+    background-color: #c2cdff;
     border-radius: 10px;
     padding: 30px;
     margin: 10px 0;
     max-width: 360px;
     text-align: left;
-    color: white;
+    color: #363636;
 }
 
 .cards-container {

@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     const background = document.getElementById('particle-background');
-    const numberOfParticles = 30;
+    const numberOfParticles = 25;
 
     for (let i = 0; i < numberOfParticles; i++) {
         let particle = document.createElement('div');

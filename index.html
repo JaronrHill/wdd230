@@ -15,16 +15,20 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <div id="particle-background"></div>
     <header>
-        <img src="images/me.png" alt="Jaron Hill">
+        <img src="images/me.webp" alt="Jaron Hill">
         <h1>WDD 230: Web Frontend Development</h1>
-        <button class="hamburger">&#9776;</button> <!-- Hamburger icon -->
+        <button class="hamburger">&#9776;</button>
         <button class="close">&times;</button>
         <nav>
             <ul>
@@ -36,14 +40,24 @@
         </nav>
     </header>
     <main>
+        <div class="hero-container">
+            <picture>
+                <source srcset="images/mesatemple.webp" media="(min-width: 961px)">
+                <source srcset="images/mesatemplemobile.webp" media="(max-width: 960px)">
+                <img src="images/mesatemple.webp" alt="Mesa Temple" class="hero-image">
+            </picture>
+            <div class="overlay-text">Mesa Temple</div>
+        </div>
         <h2>Jaron Hill - BYU-Idaho - Winter 2024</h2>
         <h2>WDD 230: Web Frontend Development</h2>
         <div class="cards-container">
             <section class="card learning-activities">
                 <h3>Learning Activities</h3>
                 <ul>
-                    <li>Week 01: <a href="https://jaronrhill.github.io/wdd230/">W01 Activity: Course Home Page Development</a></li>
-                    <li>Week 01: <a href="https://jaronrhill.github.io/wdd230/week01/chamber-site-plan">W01 W01 Project Introduction: The Chamber Site Plan</a></li>
+                    <li>Week 01: <a href="https://jaronrhill.github.io/wdd230/">W01 Activity: Course Home Page
+                            Development</a></li>
+                    <li>Week 01: <a href="https://jaronrhill.github.io/wdd230/week01/chamber-site-plan">W01 Project
+                            Introduction: The Chamber Site Plan</a></li>
                     <li>Week 02: <a href="#">W02 Project Milestone: The Chamber Home Page</a></li>
                     <li>Week 03: <a href="#">W03 Project Milestone: The Chamber Discover Page</a></li>
                     <li>Week 04: <a href="#">W04 Project Milestone: The Chamber Join Page</a></li>
@@ -54,18 +68,26 @@
             </section>
             <section class="card information">
                 <h3>Information</h3>
+                <div id="visitCounter">This page has been visited 0 times.</div>
             </section>
         </div>
         <button class="dark-mode-toggle">Dark Mode</button>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26506.237164409806!2d-112.14679320484301!3d33.85668328677349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b626ae189fcfd%3A0x98737b56b52b6836!2sAnthem%2C%20Phoenix%2C%20AZ!5e0!3m2!1sen!2sus!4v1710973138153!5m2!1sen!2sus"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </main>
-<footer>
-    <p>&copy; <span id="currentYear"></span> | Jaron Ray Hill | Rexburg, Idaho</p>
-    <p id="lastUpdated">Last Modification: </p>
-    <div class="footer-flag"></div>
-</footer>
-<script src="scripts/getDates.js"></script>
-<script src="scripts/particles.js"></script>
-<script src="scripts/darkMode.js"></script>
-<script src="scripts/hamburgerMenu.js"></script>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> | Jaron Ray Hill | Rexburg, Idaho</p>
+        <p id="lastUpdated">Last Modification: </p>
+        <div class="footer-flag"></div>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/particles.js"></script>
+    <script src="scripts/darkMode.js"></script>
+    <script src="scripts/hamburgerMenu.js"></script>
+    <script src="scripts/hamburgerClose.js"></script>
+    <script src="scripts/pageVisited.js"></script>
+    </script>
 </body>
 </html>

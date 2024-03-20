@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page</title>
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+
+<body>
+    <div id="particle-background"></div>
+    <header>
+        <img src="images/me.webp" alt="Jaron Hill">
+        <h1>WDD 230: Web Frontend Development</h1>
+        <button class="hamburger">&#9776;</button>
+        <button class="close">&times;</button>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">Site Plan</a></li>
+                <li><a href="#">Form</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form action="record.html" method="get">
+            <div>
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required pattern="[a-zA-Z0-9]{8,}">
+            </div>
+
+            <div>
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$">
+            </div>
+
+            <div>
+                <label for="page-rating">Page Rating</label>
+                <input type="range" id="page-rating" name="page-rating" min="1" max="10" step="1">
+                <span id="rating-value">5</span>
+            </div>
+
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </main>
+<footer>
+    <p>&copy; <span id="currentYear"></span> | Jaron Ray Hill | Rexburg, Idaho</p>
+    <p id="lastUpdated">Last Modification: </p>
+    <div class="footer-flag"></div>
+</footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/particles.js"></script>
+    <script src="scripts/darkMode.js"></script>
+    <script src="scripts/hamburgerMenu.js"></script>
+    <script src="scripts/hamburgerClose.js"></script>
+    <script src="scripts/pageVisited.js"></script>
+    <script>
+        var slider = document.getElementById("page-rating");
+        var output = document.getElementById("rating-value");
+        output.textContent = slider.value;
+        slider.oninput = function () {
+            output.textContent = this.value;
+        }
+    </script>
+</body>
+
+</html>

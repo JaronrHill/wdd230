@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     const background = document.getElementById('particle-background');
-    const numberOfParticles = 50;
+    const numberOfParticles = 30;
 
     for (let i = 0; i < numberOfParticles; i++) {
         let particle = document.createElement('div');
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
             position: absolute;
             border-radius: 50%;
             background-color: #8d98c8; 
-            opacity: 0.7;
+            opacity: 0.3;
         `;
         particle.dataset.speed = Math.random();
     }

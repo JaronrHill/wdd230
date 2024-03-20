@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F5F7FA;
+    color: #333;
+    padding-top: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+header img {
+    width: 150px;
+    border-radius: 50%;
+    margin: 20px 0;
+    vertical-align: middle;
+}
+
+header h1 {
+    vertical-align: middle;
+    font-family: 'Roboto', serif;
+}
+
+nav ul {
+    background-color: #c2cdff;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+li,
+a:hover {
+    color: #333;
+    text-decoration: none;
+}
+
+li a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #7a0000;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+main h2 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.card {
+    background-color: #c2cdff;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 10px 0;
+    max-width: 360px;
+    text-align: left;
+    color: white;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #c2cdff;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 10px 0;
+    max-width: 360px;
+    text-align: left;
+    color: #363636;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.learning-activities {
+    flex: 3;
+    max-width: none;
+}
+
+.information {
+    flex: 1;
+    max-width: none;
+}
+
+.hero-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    max-width: 960px;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 450px;
+}
+
+@media (max-width: 840px) {
+
+    body,
+    .cards-container {
+        padding: 20px 10px;
+        flex-direction: column;
+    }
+
+    .card {
+        max-width: none;
+    }
+}
+
+@media (max-width: 767px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+}
+
+:root {
+    --primary-color: #000000;
+    --text-color: #333;
+    --font-size: 16px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 500px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/*hamburger*/
+
+.hamburger,
+.close {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* Form-specific styles */
+form {
+    background-color: #FFF;
+    /* Using a white background for the form for better readability */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Adding a subtle shadow for depth */
+}
+
+form div {
+    margin-bottom: 20px;
+    /* Spacing between form fields */
+    text-align: left;
+    /* Aligning form labels and inputs to the left for readability */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    /* Using your body color for consistency */
+    font-family: 'Open Sans', sans-serif;
+    /* Ensuring font consistency */
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="range"],
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: 'Open Sans', sans-serif;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #7a0000;
+}
+
+@media (max-width: 767px) {
+    main {
+        padding: 10px;
+    }
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #ddd;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: #333;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background-color: #333;
+    cursor: pointer;
+    border-radius: 50%;
+}

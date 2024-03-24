@@ -1,0 +1,129 @@
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+body {
+    margin: 0;
+    font-size: 100%;
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+li,
+pre,
+blockquote {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ul[role='list'],
+ol[role='list'],
+nav ul,
+nav ol {
+    list-style: none;
+}
+
+a {
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+a:active,
+a:hover {
+    outline-width: 0;
+}
+
+a:not([href]):not([tabindex]) {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    border-style: none;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+button,
+input {
+    overflow: visible;
+}
+
+select {
+    text-transform: none;
+}
+
+a:focus {
+    outline: none;
+}
+
+@viewport {
+    width: device-width;
+    zoom: 1.0;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: sans-serif;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    font: inherit;
+    border: none;
+    background-color: transparent;
+}
+
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="submit"]:-moz-focusring,
+[type="reset"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}

@@ -346,3 +346,7 @@ body.dark-mode nav ul li a:hover {
 .mobile-hidden {
     display: none;
 }
+
+.card-information{
+    justify-content: center;
+}

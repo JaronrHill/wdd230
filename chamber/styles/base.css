@@ -945,6 +945,7 @@ div.board figure picture img {
     }
 
    main {
+       display: grid;
        grid-template-columns: 1fr 1fr 1fr;
        grid-gap: 1em;
    }
@@ -1167,8 +1168,7 @@ header{
 .directory-container {
     display: flex;
     flex-direction: column; 
-    flex-wrap: wrap;
-    justify-content: center;
+    align-items: center; 
     gap: 20px; 
     padding: 20px;
 }
@@ -1177,11 +1177,30 @@ header{
     border: 1px solid #ccc; 
     border-radius: 5px; 
     padding: 20px;
+    width: 80%; 
+    max-width: 300px; 
+    text-align: center; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.directory-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.member-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
     width: calc(50% - 40px);
     max-width: 300px;
-    text-align: center; 
+    text-align: center;
     margin-bottom: 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: Adds a subtle shadow for depth */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .member-card:last-child {

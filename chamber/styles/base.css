@@ -1162,3 +1162,13 @@ div.board figure picture img {
 header{
     padding-bottom:15px ;
 }
+
+/* Directory Card */
+
+.member-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}

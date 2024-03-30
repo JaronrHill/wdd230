@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Jaron Hill">
+    <meta property="og:title" content="Jaron Hill - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://jaronrhill.github.io/wdd230/">
+    <meta property="og:url" content="https://jaronrhill.github.io/wdd230/">
+    <title>Anthem, Arizona Chamber of Commerce</title>
+    <meta name="description"
+        content="The BYU Idaho WDD 230 - Anthem, Arizona Chamber of Commerce created by Jaron Hill">
+    <title>Anthem, Arizona Chamber of Commerce</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="images/chamberlogo.png">
+    <link type="text/css" rel="stylesheet" href="styles/normalize.css">
+    <link type="text/css" rel="stylesheet" href="styles/base.css">
+    <link type="text/css" rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+    </div>
+    <header>
+        <div class="headname">
+            <img class="logo" src="images/chamberlogo.png" alt="Anthem, Arizona Chamber of Commerce" width="20"
+                height="20">
+            <div class="vanCC-name">Anthem, Arizona<br>Chamber of Commerce</div>
+        </div>
+        <div class="social">
+            <a href="images/facebook.svg" target="_blank"><img src="images/facebook.svg" alt="Facebook"
+                    class="sociallogo"></a>
+            <a href="images/linkedin.svg" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn"
+                    class="sociallogo"></a>
+        </div>
+        <div>
+            <button id="hamburgerBtn"><span class="hamburger">☰</span><span class="hamburger">X</span></button>
+        </div>
+        <div class="menu">
+            <nav>
+                <ul id="primaryNav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <body>
+        <main id="directory-main">
+        </main>
+        <script>
+            fetch('./data/members.json')
+                .then(response => response.json())
+                .then(members => {
+                    const mainArea = document.getElementById('directory-main');
+
+                    members.forEach(member => {
+                        const memberElement = document.createElement('div');
+                        memberElement.className = 'member-card';
+                        memberElement.innerHTML = `
+                            <img src="${member.image}" alt="${member.name}">
+                            <h2>${member.name}</h2>
+                            <p>${member.address}</p>
+                            <p>${member.phone}</p>
+                            <a href="${member.website}">Website</a>
+                            <p>Membership Level: ${member.membershipLevel}</p>
+                            <p>${member.otherInfo}</p>
+                        `;
+                        mainArea.appendChild(memberElement);
+                    });
+                })
+                .catch(error => console.error('Error loading member data:', error));
+        </script>
+    </body>
+    
+    <div class="date-ftr">
+        <p id="datetime"><span id="todayHeading">Saturday, 23 March 2024</span></p>
+    </div>
+    <footer>
+        <div class="logo-footer">
+            <img class="logo-footer" src="images/chamberlogo.png" alt="Chamber of Commerce Logo" loading="lazy"
+                width="60" height="70">
+        </div>
+        <div class="name-footer">
+            <p class="medium">Anthem, Arizona<br>Chamber of Commerce</p>
+            <p>Anthem Way<br>Anthem, AZ 39711</p>
+        </div>
+        <div class="contact">
+            <p>jaaronyhill@gmail.com</p>
+            <p>(480) 111-2222</p>
+            <p><a href="Anthem Google maps link" target="_blank">Anthem, Arizona</a></p>
+        </div>
+        <div class="foot-hr">
+            <hr>
+        </div>
+        <div class="otherinfo">
+            ©<span id="copyright">2024</span> Anthem, Arizona Chamber of Commerce&nbsp;&nbsp;|&nbsp;&nbsp;Jaron
+            Hill&nbsp;&nbsp;|&nbsp;&nbsp;WDD 230 Project&nbsp;&nbsp;|&nbsp;&nbsp;Last modification: <span
+                id="dateModified">07/19/2023 17:28:03</span>
+        </div>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="TBD"></script>
+
+</html>

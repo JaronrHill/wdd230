@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Company A",
+    "address": "123 Elm St, Springfield",
+    "phone": "555-1234",
+    "website": "http://companya.com",
+    "image": "logo-companya.png",
+    "membershipLevel": "Gold",
+    "otherInfo": "Founded in 1998"
+  },
+  {
+    "name": "Company B",
+    "address": "456 Oak St, Springfield",
+    "phone": "555-5678",
+    "website": "http://companyb.com",
+    "image": "logo-companyb.png",
+    "membershipLevel": "Silver",
+    "otherInfo": "24/7 Support"
+  }
+]

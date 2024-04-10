@@ -1253,3 +1253,48 @@ header{
     margin-bottom: 0;
 }
 
+/* base.css or your custom stylesheet */
+
+.thank-you-container {
+    text-align: center;
+    /* Center text */
+    background: white;
+    /* White background for the content area */
+    padding: 50px;
+    /* Spacing inside the container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    border-radius: 10px;
+    /* Rounded corners */
+}
+
+.thank-you-container h1 {
+    color: #333;
+    /* Dark text for contrast */
+    margin-bottom: 20px;
+    text-align: center;
+    /* Spacing below the heading */
+}
+
+.thank-you-container p {
+    color: #666;
+    /* Lighter text for the paragraph */
+    margin-bottom: 30px;
+    /* Spacing below the paragraph */
+}
+
+.thank-you-container a {
+    display: inline-block;
+    /* Needed for padding and margin to work */
+    background-color: var(--accent2-color);
+    /* Button color */
+    color: var(--nav-background-color);
+    /* Text color */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.thank-you-container a:hover {
+    color:white;
+    background-color: #bc6c25;
+}

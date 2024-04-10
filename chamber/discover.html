@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Jaron Hill">
+    <meta property="og:title" content="Jaron Hill - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://jaronrhill.github.io/wdd230/">
+    <meta property="og:url" content="https://jaronrhill.github.io/wdd230/">
+    <title>Anthem, Arizona Chamber of Commerce</title>
+    <meta name="description"
+        content="The BYU Idaho WDD 230 - Anthem, Arizona Chamber of Commerce created by Jaron Hill">
+    <title>Anthem, Arizona Chamber of Commerce</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="images/chamberlogo.png">
+    <link type="text/css" rel="stylesheet" href="styles/normalize.css">
+    <link type="text/css" rel="stylesheet" href="styles/base.css">
+    <link type="text/css" rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+    <header>
+        <div class="headname">
+            <img class="logo" src="images/chamberlogo.png" alt="Anthem, Arizona Chamber of Commerce" width="20" height="20">
+            <div class="vanCC-name">Anthem, Arizona<br>Chamber of Commerce</div>
+
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.svg" alt="Facebook"
+                    class="sociallogo"></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn"
+                    class="sociallogo"></a>
+        </div>
+
+        <div>
+            <button id="hamburgerBtn"><span class="hamburger">&#9776;</span><span class="hamburger">X</span></button>
+        </div>
+        <div class="menu">
+            <nav>
+                <ul id="primaryNav">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+    </header>
+    <main class="discover">
+        <!--Hide On Medium/small View-->
+        <div class="discover-left">
+            <p class="headline">Spotlights</p>
+            <div class="spotlight" id="spotlight1">
+            
+                <img src="images/anthemrepair.png" class="spotlightImg" alt="Company 1" loading="lazy">
+                <p class="large">Anthem Repairs</p>
+                <p class="small bold italic">"Restoring Anthem's Harmony, One Repair at a Time!"</p>
+                <p class="spotinfo">(480) 111-2222 | gold | <a href="#">website</a></p>
+            </div>
+            
+            <div class="spotlight" id="spotlight2">
+            
+                <img src="images/wood.svg" class="spotlightImg" alt="Company 2" loading="lazy">
+                <p class="large">Wood Orthodontics</p>
+                <p class="small bold italic">"Crafting Smiles, Shaping Futures!"</p>
+                <p class="spotinfo">(480) 111-2222 | silver | <a href="https://woodortho.com/">website</a></p>
+            </div>
+            
+            <div class="spotlight" id="spotlight3">
+            
+                <img src="images/barros.png" class="spotlightImg" alt="Company 3" loading="lazy">
+                <p class="large">Barros</p>
+                <p class="small bold italic">"Bringing Together the Community, One Slice at a Time!"</p>
+                <p class="spotinfo">(480) 111-2222 | gold | <a
+                        href="https://barrospizza.com/locations/anthem-gavilan-peak-pkwy-anthem-way/menu">website</a></p>
+            </div>
+        </div>
+        <!--End Hide On Medium View-->
+        <div class="discover-center">
+            <div class="discover-center-full">
+                <h1>Discover Anthem, Arizona</h1>
+                <p class="discovertext">Anthem, Arizona, is a charming community located in the scenic Sonoran Desert region. Surrounded by breathtaking desert
+                landscapes and rugged mountain ranges, Anthem presents a harmonious blend of natural beauty and suburban comfort. This
+                welcoming town boasts a variety of outdoor activities, community events, and amenities that cater to a vibrant
+                lifestyle, all while being conveniently situated near the dynamic city of Phoenix. Anthem's commitment to fostering a
+                close-knit community atmosphere, combined with its picturesque setting and modern conveniences, makes it a distinctive
+                and appealing place to call home.</p>
+                <br>
+                <div class="weathercontainer">
+                    <p class="headline">Weather Forecast:</p>
+                    <div class="forecast-grid" id="forecast-grid"></div>
+                    <p class="small">Weather data provided by: <a class="small" href="https://OpenWeatherMap.org">OpenWeatherMap.org</a>
+                    </p>
+                    <br>
+                </div>
+                <p class="headline">Demographic Data:</p>
+                <p class="discovertext">As of 2021, Anthem, Arizona, is home to an estimated 23,000 residents. This planned community is known for its
+                family-friendly atmosphere and high quality of life, attracting a steady influx of new inhabitants. While Anthem is
+                smaller in scale compared to major cities, its population reflects a diverse and engaged community, contributing to the
+                area's reputation as an ideal place to live, work, and enjoy the beauty of the Arizona landscape.</p>
+                <br>
+                <p class="headline">Ethnic Diversity:</p>
+                <p class="discovertext">Anthem, Arizona, showcases a vibrant community tapestry, with residents hailing from a multitude of backgrounds. This
+                diversity enriches the town's culture, creating a welcoming and inclusive environment. Anthem's residents benefit from
+                this mosaic of cultures, enjoying opportunities to engage with a variety of traditions, experiences, and viewpoints,
+                which enhances the community's social fabric and fosters a sense of unity and understanding among its people.</p>
+                <br>
+                <p class="headline">Economic Strength:</p>
+                <p class="discovertext">Anthem, Arizona, enjoys a flourishing and dynamic local economy, underscored by its strategic positioning within the
+                Phoenix metropolitan area. The community benefits from easy access to major highways, a diverse and skilled population,
+                and a thriving small business sector. Key sectors including retail, healthcare, education, and services play pivotal
+                roles in Anthem's economic landscape, offering a wide range of employment opportunities and fostering a spirit of
+                innovation and entrepreneurship. This blend of factors contributes to Anthem's economic vitality, making it an
+                attractive place for both businesses and families.</p>
+                <br>
+                <p class="headline">Education:</p>
+                <p class="discovertext">Anthem, Arizona, is proud of its strong educational framework, featuring top-notch public and charter schools known for
+                their commitment to excellence and innovation in learning. While Anthem itself may not house higher education
+                institutions within its immediate boundaries, it provides easy access to a variety of esteemed colleges and universities
+                in the surrounding Phoenix metropolitan area. This proximity to higher education facilities, combined with Anthem's
+                dedicated local schools, creates a nurturing environment for educational growth and lifelong learning opportunities for
+                its residents.</p>
+                <br>
+                <p class="headline">Outdoor Paradise:</p>
+                <p class="discovertext">Nature lovers will be captivated by the natural splendor of Anthem, Arizona. This community is set against the backdrop
+                of the stunning Sonoran Desert, offering awe-inspiring landscapes and a multitude of outdoor activities. From hiking and
+                biking on scenic trails to enjoying the community's well-maintained parks and recreational facilities, Anthem's natural
+                charm offers boundless possibilities for exploration and tranquility. The close proximity to larger natural reserves and
+                state parks further enhances the outdoor experience, making Anthem a perfect haven for those seeking adventure or a
+                peaceful retreat into nature.</p>
+                <br>
+                <p class="headline">Arts and Culture:</p>
+                <p class="discovertext">Dive into the lively arts and cultural atmosphere of Anthem, Arizona. This community may be cozier in scale, but it
+                boasts a thriving arts scene, including local galleries, community theaters, and annual cultural festivals that
+                highlight a wide range of artistic talents. Anthem's residents and visitors can indulge in an array of live
+                performances, art exhibits, and special events that reflect the community's vibrant creative energy and commitment to
+                fostering a culturally rich environment.</p>
+                <br>
+                <p class="discovertext">Anthem, Arizona, is celebrated for its exceptional quality of life. The community is known for its safe and friendly
+                neighborhoods, beautifully landscaped parks, and a palpable sense of unity among residents. With top-notch healthcare
+                services, an array of recreational options, and a burgeoning local dining scene, Anthem offers a well-rounded lifestyle
+                that caters to the needs and interests of its inhabitants. This makes Anthem an inviting and desirable location to live,
+                where the wellbeing and satisfaction of the community are placed at the forefront.</p>
+                <p class="discovertext">Discover the unique allure of Anthem, Arizona. Whether you're drawn to the stunning desert landscapes, cultural
+                richness, or the warm, tight-knit community atmosphere, Anthem offers something special for everyone. Consider planning
+                a visit or making Anthem your new home to experience firsthand why it stands out as a remarkable place to live, work,
+                and enjoy life to the fullest. Join us in Anthem and see what makes this community a truly exceptional place to call
+                home.</p>
+                <img class="map" src="images/azmap.png" alt="Arizona map" loading="lazy">
+
+            </div>
+        </div>
+        <div>
+            <figure class="discover-card">
+                <picture>
+                    <img src='images/anthem1.webp' data-src="" alt="Anthem 1">
+                </picture>
+                <figcaption>Anthem Golf Course</figcaption>
+            </figure>
+            <figure class="discover-card">
+                <picture>
+                    <img src='images/anthem2.jpeg' data-src="" alt="Anthem 2">
+                </picture>
+                <figcaption>Anthem Park</figcaption>
+            </figure>
+            <figure class="discover-card">
+                <picture>
+                    <img src='images/anthem3.jpeg' data-src="" alt="Anthem 3">
+                </picture>
+                <figcaption>Surrounding Nature</figcaption>
+            </figure>
+            <figure class="discover-card">
+                <picture>
+                    <img src='images/anthem4.jpeg' data-src="" alt="Anthem 4">
+                </picture>
+                <figcaption>Anthem Community Center</figcaption>
+            </figure>
+            <figure class="discover-card">
+                <picture>
+                    <img src='images/anthem5.jpeg' data-src="" alt="Anthem 5">
+                </picture>
+                <figcaption>Arial View of Anthem</figcaption>
+            </figure>
+        </div>
+    </main>
+    <div class="date-ftr">
+        <p id="datetime"><span id="todayHeading"></span></p>
+    </div>
+    <footer>
+        <div class="logo-footer">
+            <img class="logo-footer" src="images/chamberlogo.png" alt="Chamber of Commerce Logo" loading="lazy" width="60"
+                height="70">
+        </div>
+        <div class="name-footer">
+            <p class="medium">Anthem, Arizona<br>Chamber of Commerce</p>
+            <p>Anthem Way<br>Anthem, AZ 39711</p>
+        </div>
+        <div class="contact">
+            <p>jaaronyhill@gmail.com</p>
+            <p>(480) 111-2222</p>
+            <p><a href="Anthem Google maps link" target="_blank">Anthem, Arizona</a></p>
+        </div>
+        <div class="foot-hr">
+            <hr>
+        </div>
+        <div class="otherinfo">
+            ©<span id="copyright">2024</span> Anthem, Arizona Chamber of Commerce&nbsp;&nbsp;|&nbsp;&nbsp;Jaron
+            Hill&nbsp;&nbsp;|&nbsp;&nbsp;WDD 230 Project&nbsp;&nbsp;|&nbsp;&nbsp;Last modification: <span
+                id="dateModified">07/19/2023 17:28:03</span>
+        </div>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/forecast.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/weekForecast.js"></script>
+    <script src="scripts/ads.js"></script>
+    </html>

@@ -9,9 +9,10 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://jaronrhill.github.io/wdd230/">
     <meta property="og:url" content="https://jaronrhill.github.io/wdd230/">
+    <title>Anthem, Arizona Chamber of Commerce</title>
     <meta name="description"
-        content="The BYU Idaho WDD 230 - Anthem, Arizona Chamber of Commerce directory created by Jaron Hill">
-    <title>Anthem, Arizona Chamber of Commerce Directory</title>
+        content="The BYU Idaho WDD 230 - Anthem, Arizona Chamber of Commerce created by Jaron Hill">
+    <title>Anthem, Arizona Chamber of Commerce</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
@@ -25,11 +26,13 @@
 </head>
 
 <body>
+    </div>
     <header>
         <div class="headname">
             <img class="logo" src="images/chamberlogo.png" alt="Anthem, Arizona Chamber of Commerce" width="20"
                 height="20">
             <div class="vanCC-name">Anthem, Arizona<br>Chamber of Commerce</div>
+
         </div>
         <div class="social">
             <a href="images/facebook.svg" target="_blank"><img src="images/facebook.svg" alt="Facebook"
@@ -37,34 +40,83 @@
             <a href="images/linkedin.svg" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn"
                     class="sociallogo"></a>
         </div>
+
         <div>
             <button id="hamburgerBtn"><span class="hamburger">☰</span><span class="hamburger">X</span></button>
         </div>
         <div class="menu">
             <nav>
                 <ul id="primaryNav">
-                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="index.html">Home</a></li>
                     <li><a href="discover.html">Discover</a></li>
-                    <li class="active"><a href="directory.html">Directory</a></li>
+                    <li><a href="directory.html">Directory</a></li>
                     <li><a href="join.html">Join</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <main class="directory">
-        <div class="content-container">
-            <h1>Directory</h1>
-            <div class="directory-buttons">
-                <button id="panel" value="Panel View">GRID<br>View</button>
-                <button id="list" value="List View" autofocus>LIST<br>View</button>
-            </div>
-            <div class="directory-grid"></div>
-        </div>
-
-    </main>
-    </body>
+    <main class="contact-main">
+        <h1 class="title">Contact Us</h1>
+        <div class="join-lft">
+            <div class="contact-card">
+                <div>
+                    <p class="large">Anthem Arizona<br>Contact Information</p>
+                    <hr>
+                    <dl>
+                        <dt>Office Hours</dt>
+                        <dd>
+                            <div class="contact-dd-center">
+                                <div>Mon - Fri</div>
+                                <div>9AM - 5PM</div>
+                            </div>
+                        </dd>
     
+                        <dd>
+                            <hr>
+                        </dd>
+    
+                        <dt>Address</dt>
+                        <dd>123 Anthem Way<br>Anthem, Arizona 85086</dd>
+    
+                        <dd>
+                            <hr>
+                        </dd>
+    
+                        <dt>Email</dt>
+                        <dd>anthem@az.com</dd>
+    
+                        <dd>
+                            <hr>
+                        </dd>
+    
+                        <dt>Phone</dt>
+                        <dd>1 (480) 123-1234</dd>
+    
+    
+    
+    
+                    </dl>
+                </div>
+            </div>
+        </div>
+    
+        <div class="form-container">
+            <form action="thankyou.html" method="get">
+                <h2>Ask a Question</h2>
+                <p>Please fill in this form to submit a question.</p>
+                <hr>
+    
+                <label class="top">Full name* <input type="text" name="name" required></label>
+                <label class="top">Email* <input type="email" placeholder="someone@gmail.com" name="email" required></label>
+                <label class="top">Question<br><textarea name="question" rows="4"></textarea></label>
+                <input type="hidden" id="formDateTime" name="formDateTime" value="">
+    
+                <input type="submit" class="submitBtn" value="Ask a Question">
+            </form>
+    
+        </div>
+    </main>
     <div class="date-ftr">
         <p id="datetime"><span id="todayHeading">Saturday, 23 March 2024</span></p>
     </div>
@@ -91,10 +143,8 @@
                 id="dateModified">07/19/2023 17:28:03</span>
         </div>
     </footer>
-    <script src="scripts/directory.js"></script>
     <script src="scripts/getDates.js"></script>
     <script src="scripts/forecast.js"></script>
     <script src="scripts/script.js"></script>
-    <script src="scripts/weekForecast.js"></script>
-    <script src="scripts/ads.js"></script>
+
 </html>

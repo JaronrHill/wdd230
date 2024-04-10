@@ -73,7 +73,6 @@ nav,
 main,
 footer {
     width: 100vw;
-    ;
     min-width: 350px;
     margin: 0 auto;
 }
@@ -180,7 +179,7 @@ h2 {
     margin: 0;
 }
 
-.vanCC-name {
+.anCC-name {
     padding: 10px 10px;
 }
 
@@ -310,12 +309,13 @@ header div nav {
 .news,
 .join,
 .event,
-.weather {
+.weather-section {
     background-color: #e3e8f0;
     border: 2px solid var(--nav-background-color);
     padding: 10px;
     text-align: center;
     position: relative;
+    border-radius: 5px;
 }
 
 .container {
@@ -328,7 +328,9 @@ header div nav {
 }
 
 .map {
-    width: 95%;
+    width: 90%;
+    height: auto;
+    align-items: center;
 }
 
 /* News Section */
@@ -436,11 +438,12 @@ hr.weather-description {
 }
 
 aside {
-    background-color: #e3e8f0;
-    border: 2px solid #bbbbbb;
+    background-color: var(--nav-background-color);
+    border: 2px solid var(--nav-background-color);
     padding: 10px;
     text-align: center;
     font-size: 14px;
+    border-radius: 5px;
 }
 
 .contact {
@@ -473,6 +476,21 @@ aside {
     margin: 5px 0px;
 }
 
+#spotlight3 img {
+    height: auto;
+    width: 100px;
+}
+
+#spotlight2 img {
+    height: auto;
+    width: 200px;
+}
+
+#spotlight1 img {
+    height: auto;
+    width: 150px;
+}
+
 .spotlight a {
     color: var(--primary-color);
     text-decoration: none;
@@ -497,9 +515,15 @@ aside {
 
 .discover-left {
     display: none;
-    background-color: rgba(191, 192, 189, 0.5);
-    border: 2px solid #bbbbbb;
+    background-color: var(--nav-background-color);
+    border: 2px solid var(--nav-background-color);
+    border-radius: 5px;
     padding: 10px;
+}
+
+.discover-left .headline{
+    text-align: center;
+    color: var(--headline-color-on-color);
 }
 
 .discover picture img {
@@ -549,6 +573,7 @@ aside {
     border-radius: 3px;
     font-weight: bold;
     font-size: 16px;
+    color: var(--nav-background-color);
 }
 
 .call-to-action:hover {
@@ -568,6 +593,7 @@ aside {
     font-weight: bold;
     font-size: 16px;
     border: none !important;
+    color: var(--nav-background-color)
 }
 
 .join-us:hover {
@@ -595,7 +621,8 @@ aside {
 .joinbridge {
     margin: 10px;
     width: 100%;
-    border: #555 2px solid;
+    border-radius: 5px;
+    border: var(--nav-background-color);
 }
 
 /* Join form */
@@ -629,13 +656,13 @@ form label.top input {
 form label.sbs {
     display: block;
     padding: 15px 0;
-    color: #000;
+    color: var(--nav-background-color);
 }
 
 form input.submitBtn {
     border: none;
-    background-color: #bc6c25;
-    color: #000;
+    background-color: var(--accent2-color);
+    color: var(--nav-background-color);
     font-weight: bold;
     border-radius: 6px;
     padding: 22px 22px;
@@ -644,25 +671,25 @@ form input.submitBtn {
     cursor: pointer;
 }
 
-form label.top input:required {
-    border-left: #bc6c25 solid 6px;
-}
-
 form label.top input:required:valid {
     border-left: green solid 6px;
+}
+
+fieldset{
+    padding: 10px;
 }
 
 form textarea {
     display: block;
     font-size: 18px;
-    border: solid 1px #999;
+    border: solid 2px var(--nav-background-color);
     border-radius: 4px;
     width: 100%;
     padding: 15px;
 }
 
 fieldset {
-    border-radius: 4px;
+    border-radius: 5px;
 }
 
 legend {
@@ -672,7 +699,7 @@ legend {
 }
 
 .membership {
-    accent-color: #bc6c25;
+    accent-color: var(--accent1-color);
 }
 
 .forecast-grid {
@@ -720,11 +747,10 @@ legend {
 }
 
 .directory-buttons button {
-    background-color: #ffffff;
-    margin: -30px 15px 20px 15px;
-    border-radius: 6px;
+    background-color: var(--nav-background-color);
+    margin: -20px 15px 20px 15px;
+    border-radius: 5px;
     color: #fff;
-    font-weight: bold;
     border: 2px #ffffff solid;
 }
 
@@ -768,7 +794,7 @@ legend {
 }
 
 .directory-grid img {
-    display: none;
+    background-color: none;
 }
 
 .directory-grid section p {
@@ -807,7 +833,7 @@ legend {
     display: block;
     margin: 15px auto;
     width: 100px;
-    border-radius: 5px;
+    border-radius: px;
 }
 
 .contact-main {
@@ -886,11 +912,15 @@ div figure.board-card {
 }
 
 .spotlight {
-    border-radius: 5px;
-    background-color: #fff;
-    border: 2px solid #bbbbbb;
-    margin: 0px 0px 15px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .spotlightImg {
@@ -1001,6 +1031,15 @@ div.board figure picture img {
         display: block;
     }
 
+.event img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 15px;
+}
+
     .weather {
         grid-column: 3/4;
         grid-row: 5/6;
@@ -1086,12 +1125,19 @@ div.board figure picture img {
         object-fit: cover;
         object-position: center;
         padding: 10px;
-        border: 1px solid #858585;
+        border: 2px solid var(--nav-background-color);
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .discover-card{
+        text-align: center;
     }
 
     .discover-card picture img:hover {
         -webkit-transform: scale(1.02);
         transform: scale(1.02);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     }
 
     .join-van-cc {
@@ -1119,7 +1165,7 @@ div.board figure picture img {
     .forecast-card {
         display: flex;
         flex-direction: column;
-        border: 1px solid black;
+        border: 2px solid var(--nav-background-color);
         width: 110px;
         border-radius: 5px;
         padding: 10px;
@@ -1193,7 +1239,7 @@ header{
 }
 
 .member-card {
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     border-radius: 5px;
     padding: 20px;
     width: calc(50% - 40px);
@@ -1206,3 +1252,4 @@ header{
 .member-card:last-child {
     margin-bottom: 0;
 }
+

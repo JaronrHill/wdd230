@@ -91,6 +91,14 @@
     <script src="scripts/pageVisited.js"></script>
     <script src="scripts/weather.js"></script>
     <script src="scripts/links.js"></script>
+    <script>
+        var slider = document.getElementById("page-rating");
+        var output = document.getElementById("rating-value");
+        output.textContent = slider.value;
+        slider.oninput = function () {
+            output.textContent = this.value;
+        }
+    </script>
 
 </body>
 </html>

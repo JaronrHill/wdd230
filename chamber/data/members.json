@@ -1,20 +1,56 @@
 [
   {
-    "name": "Company A",
-    "address": "123 Elm St, Springfield",
-    "phone": "555-1234",
-    "website": "http://companya.com",
-    "image": "logo-companya.png",
-    "membershipLevel": "Gold",
-    "otherInfo": "Founded in 1998"
-  },
-  {
-    "name": "Company B",
-    "address": "456 Oak St, Springfield",
-    "phone": "555-5678",
-    "website": "http://companyb.com",
-    "image": "logo-companyb.png",
-    "membershipLevel": "Silver",
-    "otherInfo": "24/7 Support"
-  }
+        "name": "Company A",
+        "address": "123 Elm St, Springfield",
+        "phone": "555-1234",
+        "website": "http://companya.com",
+        "image": "images/azmap.png",
+        "membershipLevel": "Gold",
+        "otherInfo": "Founded in 1998"
+    },
+    {
+        "name": "Company B",
+        "address": "456 Oak St, Springfield",
+        "phone": "555-5678",
+        "website": "http://companyb.com",
+        "image": "images/azmap.png",
+        "membershipLevel": "Silver",
+        "otherInfo": "24/7 Support"
+    },
+    {
+        "name": "Company C",
+        "address": "789 Pine St, Springfield",
+        "phone": "555-9101",
+        "website": "http://companyc.com",
+        "image": "images/azmap.png",
+        "membershipLevel": "Bronze",
+        "otherInfo": "Eco-friendly Products"
+    },
+    {
+        "name": "Company D",
+        "address": "1011 Maple Ave, Springfield",
+        "phone": "555-1122",
+        "website": "http://companyd.com",
+        "image": "images/azmap.png",
+        "membershipLevel": "Silver",
+        "otherInfo": "Award-winning Services"
+    },
+    {
+        "name": "Company E",
+        "address": "1213 Birch Rd, Springfield",
+        "phone": "555-1314",
+        "website": "http://companye.com",
+        "image": "images/azmap.png",
+        "membershipLevel": "Gold",
+        "otherInfo": "Family Owned"
+    },
+    {
+        "name": "Company F",
+        "address": "113 Silk Rd, Springfield",
+        "phone": "555-1314",
+        "website": "http://companye.com",
+        "image": "images/azmap.png",
+        "membershipLevel": "Gold",
+        "otherInfo": "Family Owned"
+    }
 ]

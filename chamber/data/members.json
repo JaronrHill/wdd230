@@ -48,9 +48,18 @@
         "name": "Company F",
         "address": "113 Silk Rd, Springfield",
         "phone": "555-1314",
-        "website": "http://companye.com",
+        "website": "http://companyf.com",
         "image": "images/azmap.png",
         "membershipLevel": "Gold",
+        "otherInfo": "Family Owned"
+    },
+    {
+        "name": "Company G",
+        "address": "113 Cedar Rd, Springfield",
+        "phone": "555-1314",
+        "website": "http://companyg.com",
+        "image": "images/azmap.png",
+        "membershipLevel": "Bronze",
         "otherInfo": "Family Owned"
     }
 ]

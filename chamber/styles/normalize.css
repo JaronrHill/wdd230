@@ -16,7 +16,6 @@ body {
     margin: 0;
     font-size: 100%;
     line-height: 1.5;
-    text-rendering: optimizeLegibility;
 }
 
 h1,
@@ -86,7 +85,6 @@ a:focus {
 }
 
 @viewport {
-    width: device-width;
     zoom: 1.0;
 }
 

@@ -302,7 +302,6 @@ svg {
     display: none;
     position: absolute;
     z-index: 2147483647;
-    pointer-events: none;
     border: 1px solid #1e83ff;
     background: rgba(0, 0, 0, 0.1);
     box-sizing: border-box;

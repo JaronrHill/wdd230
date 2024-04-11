@@ -5,7 +5,6 @@
     --secondary-color: #2F4858;
     --accent1-color: #F26419;
     --accent2-color: #F6AE2D;
-
     --heading-font: "Open Sans", Arial, Helvetica, sans-serif;
     --paragraph-font: "Roboto", sans-serif;
 
@@ -793,10 +792,6 @@ legend {
     border-radius: 3px;
 }
 
-.directory-grid img {
-    background-color: none;
-}
-
 .directory-grid section p {
     text-align: center;
     font-size: 16px;
@@ -833,7 +828,6 @@ legend {
     display: block;
     margin: 15px auto;
     width: 100px;
-    border-radius: px;
 }
 
 .contact-main {
